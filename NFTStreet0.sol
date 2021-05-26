@@ -676,7 +676,7 @@ interface IPancakeRouter02 is IPancakeRouter01 {
     ) external;
 }
 
-contract Safemoon is Context, IBEP20, Ownable {
+contract NFTStreet is Context, IBEP20, Ownable {
     using SafeMath for uint256;
     using Address for address;
 
@@ -694,8 +694,8 @@ contract Safemoon is Context, IBEP20, Ownable {
     uint256 private _rTotal = (MAX - (MAX % _tTotal));
     uint256 private _tFeeTotal;
 
-    string private _name = "Safemoon";
-    string private _symbol = "SFM";
+    string private _name = "NFTStreet";
+    string private _symbol = "NFTS";
     uint8 private _decimals = 9;
     
     uint256 public _taxFee = 5;
